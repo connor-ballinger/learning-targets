@@ -1,6 +1,6 @@
 ---
 title: "Notes for `targets`"
-date: "`r conr::format_date()`"
+date: "7th February, 2025"
 author: "Connor Ballinger"
 knit: conr::write_and_date
 output: 
@@ -8,7 +8,8 @@ output:
     keep_md: true
 ---
 
-```{r setup, message=FALSE, warning=FALSE}
+
+``` r
 knitr::opts_knit$set(root.dir = here::here())
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = "")
 
@@ -18,7 +19,6 @@ library(tidyverse)
 library(targets)
 
 conr::knit_df()
-
 ```
 
 [The {targets} R package user manual](https://books.ropensci.org/targets/)
@@ -175,7 +175,8 @@ All target script files have these requirements:
 
 - example:
 
-```{r, eval=FALSE}
+
+``` r
 ## _targets.R ------------------------------------------------------------------
 # do not run
 
