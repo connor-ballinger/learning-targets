@@ -1,0 +1,20 @@
+---
+title: "Notes for `hesim`"
+date: "`r conr::format_date()`"
+author: "Connor Ballinger"
+knit: conr::write_and_date
+output: conr::format_html
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+knitr::opts_knit$set(root.dir = here::here())
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, comment = "")
+
+library(conr)
+library(knitr)
+library(tidyverse)
+
+conr::knit_df()
+
+```
+
